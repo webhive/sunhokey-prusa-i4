@@ -137,7 +137,7 @@
 #define EXTRUDERS 1
 
 // Generally expected filament diameter (1.75, 2.85, 3.0, ...). Used for Volumetric, Filament Width Sensor, etc.
-#define DEFAULT_NOMINAL_FILAMENT_DIA 3.0
+#define DEFAULT_NOMINAL_FILAMENT_DIA 1.75
 
 // For Cyclops or any "multi-extruder" that shares a single nozzle.
 //#define SINGLENOZZLE
@@ -536,7 +536,7 @@
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-// #define DEFAULT_MAX_FEEDRATE          { 120, 120, 5, 50 } // default value 
+// #define DEFAULT_MAX_FEEDRATE          { 120, 120, 5, 50 } // default value
 #define DEFAULT_MAX_FEEDRATE          { 120, 120, 7, 50 }
 
 /**
@@ -571,7 +571,6 @@
 #define DEFAULT_YJERK                 20.0
 #define DEFAULT_ZJERK                  0.4
 #define DEFAULT_EJERK                  5.0
-
 
 //===========================================================================
 //============================= Z Probe Options =============================
@@ -1011,7 +1010,6 @@
  * Useful to retract or move the Z probe out of the way.
  */
 #define Z_PROBE_END_SCRIPT "G1 Z10 F12000\nG1 X15 Y330\nG1 Z0.5\nG1 Z10"
-
 
 // @section homing
 
@@ -1773,3 +1771,4 @@
 //#define DEACTIVATE_SERVOS_AFTER_MOVE
 
 #endif // CONFIGURATION_H
+
