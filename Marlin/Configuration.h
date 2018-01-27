@@ -119,7 +119,7 @@
 // The following define selects which electronics board you have.
 // Please choose the name from boards.h that matches your setup
 #ifndef MOTHERBOARD
-  #define MOTHERBOARD BOARD_MKS_13
+  #define MOTHERBOARD BOARD_MKS_BASE
 #endif
 
 // Optional custom name for your RepStrap or other custom machine
@@ -226,7 +226,7 @@
  *
  * :{ 0:'No power switch', 1:'ATX', 2:'X-Box 360' }
  */
-#define POWER_SUPPLY 1
+#define POWER_SUPPLY 0
 
 #if POWER_SUPPLY > 0
   // Enable this option to leave the PSU off at startup.
@@ -536,8 +536,7 @@
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-// #define DEFAULT_MAX_FEEDRATE          { 120, 120, 5, 50 } // default value
-#define DEFAULT_MAX_FEEDRATE          { 120, 120, 7, 50 }
+#define DEFAULT_MAX_FEEDRATE          { 120, 120, 5, 50 }
 
 /**
  * Default Max Acceleration (change/s) change = mm/s
